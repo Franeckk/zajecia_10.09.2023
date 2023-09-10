@@ -22,7 +22,7 @@ def test_1():
     assert fizzbuzz(3000) == 'FizzBuzz'
 def test_advanced():
     assert fizzbuzz(0) == None
+    assert fizzbuzz('mama') == None
     assert fizzbuzz(5.2) == 'Buzz'
     assert fizzbuzz(3.2) == 'Fizz'
     assert fizzbuzz(3.9) == 'Fizz'
-    assert fizzbuzz('Mama') == None

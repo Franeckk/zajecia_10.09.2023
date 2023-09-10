@@ -4,19 +4,32 @@ def add (x, y):
 def number_of_letters(x):
     return(len(x))
 
-def fizzbuzz(i):
-    if isinstance(i, str) is True:
+def fizzbuzz(liczba):
+    if isinstance(liczba, str) is True:
         return None
     else:
-        i = int(i)
-        if i<= 0:
+        liczba = int(liczba)
+        if liczba<= 0:
             return None
-        elif i % 3 == 0 and i % 5 == 0:
+        elif liczba % 3 == 0 and liczba % 5 == 0:
             return 'FizzBuzz'
-        elif  i % 3 == 0:
+        elif  liczba % 3 == 0:
             return 'Fizz'
-        elif i % 5 == 0:
+        elif liczba % 5 == 0:
             return 'Buzz'
 
-        return i
+        return liczba
+
+# inna opcja tego co wyżej
+def fizzbuzz(liczba):
+    if not isinstance(liczba, str) and liczba > 0:
+        liczba = int(liczba)
+        if liczba % 3 == 0 and liczba % 5 == 0:
+            return 'FizzBuzz'
+        elif  liczba % 3 == 0:
+            return 'Fizz'
+        elif liczba % 5 == 0:
+            return 'Buzz'
+        else:
+            return liczba
 

@@ -33,3 +33,7 @@ def fizzbuzz(liczba):
         else:
             return liczba
 
+#inna opcja
+def fizzbuzz(liczba):
+    if isinstance(liczba, (int, float)) and liczba > 0:
+        # i jak wyzej juz reszta

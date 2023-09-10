@@ -6,4 +6,10 @@ def poziom_ryzyka(wiek, plec, wyksztalcenie):
    else:
        return 0
 
+   if wyksztalcenie == "Podstawowe":
+       return 1
+   else:
+       return 0
+
+
 
